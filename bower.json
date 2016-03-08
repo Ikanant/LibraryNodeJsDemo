@@ -1,0 +1,21 @@
+{
+  "name": "pluralsight",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Jonathan Hernandez <jonathan.hdez92@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

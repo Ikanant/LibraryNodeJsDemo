@@ -10,5 +10,5 @@ app.get('/', function(req, res){
 });
 
 app.listen(port, function(err){
-   console.log("Running server on port: " + port);
+   console.log('Running server on port: ' + port);
 });

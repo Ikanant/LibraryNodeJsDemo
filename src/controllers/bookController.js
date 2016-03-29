@@ -34,11 +34,16 @@ var bookController = function(bookService, nav){
             var collection = db.collection('books');
             collection.findOne({_id: id},
                 function (err, result) {
-                    res.render('bookView', {
-                        title: 'Book',
-                        nav: nav,
-                        book: result
-                    });
+                    bookService.getBookById(result.bookId,
+                        function(err, book){
+                            result.book = book;
+                            res.render('bookView', {
+                                title: 'Book',
+                                nav: nav,
+                                book: result
+                            });
+                        }
+                    );
                 });
         });
     }
